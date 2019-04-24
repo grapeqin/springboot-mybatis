@@ -9,7 +9,7 @@
 		<version>2.1.3.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>grapple.learn.springboot</groupId>
+	<groupId>grape.learn.springboot</groupId>
 	<artifactId>mybatis</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>springboot-mybatis</name>
@@ -29,6 +29,14 @@
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.batch</groupId>
+			<artifactId>spring-batch-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.mybatis.spring.boot</groupId>

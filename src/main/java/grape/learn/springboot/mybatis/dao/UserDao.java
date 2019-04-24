@@ -1,12 +1,12 @@
-package grapple.learn.springboot.mybatis.dao;
+package grape.learn.springboot.mybatis.dao;
 
 import java.util.List;
 
 import org.apache.ibatis.annotations.Param;
-import grapple.learn.springboot.mybatis.domain.User;
+import grape.learn.springboot.mybatis.domain.User;
 
 /**
- * @author grapple
+ * @author grape
  * @date 2019/3/19
  * @description
  */
