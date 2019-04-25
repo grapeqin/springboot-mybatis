@@ -6,11 +6,14 @@ springboot-mybatis 简易集成教程
 
 ####  SpringBoot集成Mybatis
 
-1. POM依次引用mybatis-spring-boot-starter、mysql-connector-java和spring-batch-core
-2. 编写Dao接口和xml映射文件
-3. 编写TestCase
+- Step1. pom引用相关依赖，具体请参考项目中的pom.xml文件
+- Step2. application配置文件中配置dataSource和mybatis，具体请参考application.properties文件
+- Step3. 编写Domain、Dao和mapper文件，请依次参考包domain、dao和resources/mapper目录下的代码
+- Step4. SpringbootMybatisApplication类添加注解@MapperScan(value = "grape.learn.springboot.mybatis")
+- Step5. 参考SpringbootWithRealDatabaseMybatisTests编写TestCase  
 
 #### SpringBoot集成Mybatis流式查询
 
-1. Spring-Mybatis 提供了一个MyBatisCursorItemReader类能方便我们快速实现流式查询，具体的实现方式
-请参考MybatisCursorItemConfiguration
+- Step1. 向容器中注入MyBatisCursorItemReader，请参考MybatisCursorItemConfiguration源码
+- Step2. 使用MyBatisCursorItemReader实例实现流式查询表数据，请参考UserService源码
+- Step3. 参考SpringbootWithRealDatabaseMybatisTests编写TestCase
